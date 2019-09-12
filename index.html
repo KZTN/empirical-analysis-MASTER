@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>empirical analysis MASTER</title>
+</head>
+<body>
+        <div id="app">
+            <canvas id="myChart" width="1600" height="900"></canvas>
+            <form enctype="multipart/form-data" action="app.php" method="POST">
+                <h1>Qual tipo de método deseja utilizar?</h1>
+                <select name="mySelect" >
+                    <option value="I">INSERTION SORT</option>
+                    <option value="M">MERGE SORT</option>
+                </select>
+                <h1>Qual o maior número de elementos e seu salto</h1>
+                <input type="text" name="n_elementos">
+                <input type="text" name="salto">
+                <input type="submit" value="Go!" name="btnSubmit">
+            </form>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+        <script type="text/javascript" src="data.json"></script>
+</body>
+</html>
